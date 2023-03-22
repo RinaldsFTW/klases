@@ -1,0 +1,33 @@
+class Cat:
+    eye_color = "green"
+    name = "Mia"
+    age = 2
+
+    def introduce(self):
+        print(f"Hello, my name is {self.name}, I am {self.age} and have {self.eye_color} eyes.")
+
+    def speak(self):
+        print("Meow")
+
+    def run(self):
+        print(f"{self.name} is running!")
+
+
+cat1 = Cat()
+cat2 = Cat()
+print(cat1.eye_color)
+print(cat2.eye_color)
+
+cat2.eye_color = "black"
+cat2.name = "Emi"
+cat2.age = 1.2
+print(f"Cat {cat1.name} has {cat1.eye_color} eyes.")
+print(f"Cat {cat2.name} has {cat2.eye_color} eyes.")
+
+cat1.introduce()
+cat1.speak()
+cat1.run()
+
+cat2.introduce()
+cat2.speak()
+cat2.run()
